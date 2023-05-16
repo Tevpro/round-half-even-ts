@@ -6,20 +6,20 @@ Read more: https://en.wikipedia.org/wiki/Rounding#Round_half_to_even
 
 ## Demo
 
-https://rawgit.com/schowdhuri/round-half-even/master/demo/index.html
+https://rawgit.com/newbish/round-half-even/master/demo/index.html
 
 ## Installation
 
 Using npm:
 
 ```sh
-npm install --save round-half-even
+npm install --save @newbish/round-half-even
 ```
 
 Or yarn:
 
 ```sh
-yarn add round-half-even
+yarn add @newbish/round-half-even
 ```
 
 ## Usage
