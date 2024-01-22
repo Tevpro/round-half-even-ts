@@ -6,20 +6,20 @@ Read more: https://en.wikipedia.org/wiki/Rounding#Round_half_to_even
 
 ## Demo
 
-https://rawgit.com/newbish/round-half-even/master/demo/index.html
+https://rawgit.com/tevpro/round-half-even-ts/master/demo/index.html
 
 ## Installation
 
 Using npm:
 
 ```sh
-npm install --save @newbish/round-half-even
+npm install --save round-half-even-ts
 ```
 
 Or yarn:
 
 ```sh
-yarn add @newbish/round-half-even
+yarn add round-half-even-ts
 ```
 
 ## Usage
@@ -31,14 +31,14 @@ roundHalfEven(floatingPointValue, numberOfDecimals);
 ### Node.js
 
 ```js
-import roundHalfEven from "round-half-even";
+import roundHalfEven from "round-half-even-ts";
 roundHalfEven(1.435, 2); // returns 1.44
 ```
 
 ### Within the browser:
 
 ```html
-<script src="https://unpkg.com/round-half-even"></script>
+<script src="https://unpkg.com/round-half-even-ts"></script>
 <script>
   roundHalfEven(1.435, 2); // returns 1.44
 </script>
