@@ -90,4 +90,4 @@ function roundHalfEven(value: number, numDecimals = 2): number {
   return parseFloat(`${output}.${newFractPart}${nextDig}`);
 };
 
-export default roundHalfEven
+module.exports = roundHalfEven;
