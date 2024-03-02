@@ -6,7 +6,7 @@ Read more: https://en.wikipedia.org/wiki/Rounding#Round_half_to_even
 
 ## Demo
 
-https://rawgit.com/tevpro/round-half-even-ts/master/demo/index.html
+https://tevpro.github.io/round-half-even-ts/
 
 ## Installation
 

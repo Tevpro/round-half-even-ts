@@ -1,5 +1,20 @@
 const path = require("path");
-const webpack = require("webpack")
+const fs = require('fs-extra');
+
+class CopyToDemoPlugin {
+    apply(compiler) {
+        compiler.hooks.afterEmit.tap('CopyToDemoPlugin', function (compilation) {
+            const source = './dist/round-half-even.min.js';
+            const dest = './docs/round-half-even.min.js';
+            fs.copy(source, dest, function (err) {
+                if (err) {
+                    return console.error(err);
+                }
+                console.log('Copied to ' + dest);
+            });
+        });
+    }
+}
 
 module.exports = {
     entry: "./src/index.ts",
@@ -22,4 +37,5 @@ module.exports = {
         library: "roundHalfEven",
         libraryTarget: "umd"
     },
+    plugins: [new CopyToDemoPlugin()],
 };
